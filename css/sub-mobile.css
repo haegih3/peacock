@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.btn-menu {
+  background: url(../img/icon-hamburger.png) no-repeat right top / auto 100%;
+}
+
+/* sub common */
+#container {padding: 10em 20px;}
+.title {margin-bottom: 2em;}
+.title h2 {
+  float: none;
+  width: 100%;
+  font-size: 3rem;
+}
+.title p {
+  float: none;
+  width: 100%;
+  font-size: 1.4rem;
+  margin-top: 1.5em;
+  margin-left: 0;
+}
+.list ul {margin: 50px 0 0 -5%;}
+.list ul li {
+  float: left;
+  margin: 0 0 5% 5%;
+  width: 44.5%;
+  display: none;
+}
+.list ul .list-desc {
+  padding: 1em 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* view more */
+.more-area a {width: calc(100% - 65px);}
+.more-area .btn-more {padding: 0 0.5em;}
+.more-area > span {font-size: 1.3rem;}
+
+/* life */
+#life .title h2 {display: inline;}
+#life .title h2:before {
+	top: -5px; right: 0;
+	width: 10px; height: 10px;
+}
+.list ul li a figure {
+  height: 100%;
+}
+#life .life-best figure {margin-bottom: 1em;}
+#life .list ul .list-desc {
+  width: 100%;
+  font-size: 1.3rem;
+}
+.life-best h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* archive */
+#archive .input-box {bottom: 5px;}
+#archive .input-box input {width: 150px;}
+#archive .input-box button {
+  width: 18px; height: 18px;
+  background: url(../img/button-archive-search.png) no-repeat center;
+  vertical-align: middle;
+}
+#archive .list-desc:before {
+  top: 5px;
+  font-size: 2rem;
+}
+#archive .list-desc span {margin-top: 1em;}

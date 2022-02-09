@@ -1,0 +1,2634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>이마트 피코크 - PEACOCK</title>
+  <link rel="stylesheet" href="css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
+	<link rel="stylesheet" href="css/peacock.css" type="text/css">
+	<link rel="stylesheet" href="css/tablet-b.css" media="screen and (min-width: 1201px) and (max-width: 1450px)" type="text/css">
+	<link rel="stylesheet" href="css/tablet-s.css" media="screen and (min-width: 768px) and (max-width: 1200px)" type="text/css">
+	<link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)" type="text/css">
+	<link rel="stylesheet" href="css/sub.css" type="text/css">
+	<link rel="stylesheet" href="css/sub-mobile.css" media="screen and (max-width: 767px)" type="text/css">
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div class="skip-top">
+	<a href="#container">본문바로가기</a>
+</div>
+<div id="wrap">
+	<header>
+		<a href="javascript:;" class="btn-menu"><span class="blind">메뉴보기</span></a>
+		<a href="index.html" class="logo" title="메인페이지로 가기"><span class="blind">PEACOCK</span></a>
+		<div class="gnb-bg">
+			<nav class="gnb">
+				<a href="javascript:;" class="btn-back"><span class="arrow-back"></span>BACK</a>
+				<a href="javascript:;" class="btn-close"><span class="blind">닫기</span></a>
+				<ul class="cf">
+					<li><a href="#layer-dining" title="레이어팝업보기" class="gnb-pop">dining</a></li>
+					<li><a href="#layer-cafe" title="레이어팝업보기" class="gnb-pop">cafe</a></li>
+					<li><a href="#layer-cupboard" title="레이어팝업보기" class="gnb-pop">cupboard</a></li>
+					<li><a href="#layer-gourmet" title="레이어팝업보기" class="gnb-pop">gourmet</a></li>
+					<li><a href="life.html" class="menu-plus">life</a></li>
+					<li><a href="archive.html">archive</a></li>
+					<li><a href="javascript:;" class="gnb-market">market</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="util">
+			<p>
+				<span class="mo-view">로그인 해주세요</span>
+				<a href="#" onclick="$('.pop-base').css('height', $(window).height()); $('#login-area').fadeIn();" class="btn-login" title="레이어팝업보기">LOGIN</a>
+			</p>
+			<a href="#" onclick="$('.pop-base').css('height', $(window).height()); $('#search-area').fadeIn();" class="btn-search" title="레이어팝업보기"><span class="blind">검색</span></a>
+			<a href="#" onclick="$('.pop-base').css('height', $(window).height()); $('#my-area').fadeIn();" class="btn-my" title="레이어팝업보기"><span class="blind">My Menu</span></a>
+		</div>
+	</header>
+<!-- //header	-->
+	<div id="gnb-popUp" class="gnb-layer">
+		<div class="layer-bg"></div>
+		<div class="menu-area">
+			<div id="layer-dining" class="layer-menu">
+				<h2>dining</h2>
+				<ul>
+					<li class="main" id="korean"><a href="#korean-list">korean</a></li>
+					<li class="main" id="chinese"><a href="#chinese-list">chinese</a></li>
+					<li class="main" id="japan"><a href="#japan-list">japan</a></li>
+					<li class="main" id="italian"><a href="#italian-list">italian</a></li>
+				</ul>
+			</div>
+			<div id="layer-cafe" class="layer-menu">
+				<h2>cafe</h2>
+				<ul>
+					<li class="main" id="sweet"><a href="#sweet-list">sweet</a></li>
+					<li class="main" id="bakery"><a href="#bakery-list">bakery</a></li>
+					<li class="main" id="beverage"><a href="#beverage-list">beverage</a></li>
+				</ul>
+			</div>
+			<div id="layer-cupboard" class="layer-menu">
+				<h2>cupboard</h2>
+				<ul>
+					<li class="main" id="cereal"><a href="#cereal-list">cereal</a></li>
+					<li class="main" id="spice"><a href="#spice-list">spice</a></li>
+					<li class="main" id="snack"><a href="#snack-list">snack</a></li>
+				</ul>
+			</div>
+			<div id="layer-gourmet" class="layer-menu">
+				<h2>gourmet</h2>
+				<ul>
+					<li>
+						<span class="main">맛집콜라보</span>
+						<ul class="sub-list">
+							<li class="sub" id="choma"><a href="#choma-list">초마</a></li>
+							<li class="sub" id="giwa"><a href="#giwa-list">큰기와집</a></li>
+							<li class="sub" id="samwon"><a href="#samwon-list">삼원가든</a></li>
+							<li class="sub" id="koroke"><a href="#koroke-list">강남고로케</a></li>
+							<li class="sub" id="soonheene"><a href="#soonheene-list">순희네 빈대떡</a></li>
+							<li class="sub" id="kimyoojo"><a href="#kimyoojo-list">김유조 전통음료</a></li>
+							<li class="sub" id="josunhotel"><a href="#josunhotel-list">조선호텔 김치</a></li>
+						</ul>
+					</li>
+					<li class="main" id="ch"><a href="#ch-list">피콕반점</a></li>
+					<li class="main" id="mandoo"><a href="#mandoo-list">만두연구소</a></li>
+				</ul>
+			</div>
+			<div class="btn-area">
+				<a href="#" class="btn-close-w"><span class="blind">레이어팝업닫기</span></a>
+			</div>
+		</div>
+		<div class="menu-list">
+			<div class="gourmet-info">
+				<div id="choma-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>초마</h1>
+							<p>
+								불 맛이 만들어낸<br>중식의 깊은 맛
+							</p>
+						</div>
+						<img src="img/peacock-choma-image-1.jpg" alt="초마 짬뽕">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							“재료를 불에 볶다＂라는 의미의 초마<br>중식의 고수, 그만의 비법을 담아내다
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-choma-image-2.jpg" alt="초마 짜장">
+						<span>
+							어린 시절부터 아버지 밑에서<br>중식을 배우며 불 앞에서<br>성장해온 중식의 고수<br>그만의 비법을 담아내다
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-choma-image-3.jpg" alt="초마 음식">
+						<span>
+							전통을 새롭게 해석하다
+						</span>
+						<p>
+							중화요리만 고집해온 집안에서 성장해 중화요리에 정통한 왕석천 셰프<br>그는 전통의 맛을 재해석해 중식의 새 길을 열었습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-left">
+							<span>
+								오직 초마에서만<br>만날 수 있는 맛
+							</span>
+							<p>
+								맑고 담백한 소스로 맛을 낸 탕수육,<br>해물이 아닌 고기를 베이스로 한 짬뽕은<br>오직 초마에서만 만날 수 있는<br>시그니처 메뉴입니다
+							</p>
+							<img src="img/peacock-choma-image-4.jpg" alt="초마 하얀짬뽕">
+						</div>
+						<div class="f-right">
+							<img src="img/peacock-choma-image-5.jpg" alt="초마 매장전경">
+							<span>
+								트렌드가 되다
+							</span>
+							<p>
+								홍대에서 시작해 여러 곳에 지점을 내며,<br>영역을 넓혀가고 있는 초마<br>초마 자체가 하나의 트렌드가 되어가고 있습니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							오직 초마에서만 만날 수 있던 특별한 중식의 맛 이제 피코크에서 만나보세요
+						</span>
+					</div>
+				</div>
+				<div id="giwa-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>큰기와집</h1>
+							<p>
+								300년을 이어온<br>종가의 손맛을 담다
+							</p>
+						</div>
+						<img src="img/peacock-giwa-image-1.jpg" alt="간장게장">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							청주 한 씨 집안 종갓집 며느리로부터<br>1977년 목포에서 시작된 큰기와집
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-giwa-image-2.jpg" alt="큰기와집 간판">
+						<span>
+							1998년 삼청동으로 이전하며 대를 이어 전해진 그 깊은 맛<br>그대로를 담아내다
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-giwa-image-3.jpg" alt="미쉘린 가이트 패">
+						<span>
+							미쉘린 가이드도 인정한 맛
+						</span>
+						<p>
+							큰기와집은 청주 한 씨 집안 장 특유의 깊은 감칠맛으로 미쉘린 가이드에 선정되기도 했습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-left">
+							<span>
+								300년 대를 이어지켜온 맛
+							</span>
+							<p>
+								큰기와집 대표님은 발효공학으로<br>박사 학위를 받는 등<br>집안 대대로 물려받은 장 맛을<br>지키기 위해 최선을 다하고 있습니다
+							</p>
+							<img src="img/peacock-giwa-image-4.jpg" alt="간장게장">
+						</div>
+						<div class="f-right">
+							<img src="img/peacock-giwa-image-5.jpg" alt="게장 한상차림">
+							<span>
+								직접 알려준 레시피로
+							</span>
+							<p>
+								짜지 않으면서도 깊고 풍부한 맛을<br>그대로 재현하기 위해<br>큰기와집 대표님의 레시피로 만들었습니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							300년 전통의 깊은 맛<br>이제 피코크에서 만나보세요
+						</span>
+					</div>
+				</div>
+				<div id="samwon-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>삼원가든</h1>
+							<p>
+								한국의 전통 그 맛과<br>여유를 만끽하다
+							</p>
+						</div>
+						<img src="img/peacock-samwon-image-1.jpg" alt="홍탕">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							1976년에 오픈한 이래 한국을 넘어<br>외국인에게까지 사랑받아 온 삼원가든
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-samwon-image-2.jpg" alt="처마밑 등">
+						<span>
+							국내 최대의 고급 한식당으로 자리매김한 전통의 맛을 이제 우리집에서 만난다
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-samwon-image-3.jpg" alt="홍탕과 백탕">
+						<span>
+							전통 한식의 맛을 고이 간직하다
+						</span>
+						<p>
+							우리나라 전통의 한식문화를 널리 전하기 위해<br>가장 대중적인 갈비와 불고기, 백탕,홍탕뿐만 아니라<br>다양한 한식 메뉴를 연구하고 선보이고 있습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-right">
+							<img src="img/peacock-samwon-image-4.jpg" alt="백탕">
+							<span>
+								한식의 세계화에 앞장서다
+							</span>
+							<p>
+								국제 행사로 방한하였던<br>수많은 외국 귀빈들을 대접하며<br>한식의 세계화에 앞장서기도 했습니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							세계도 인정한 한식의 맛<br>이제 피코크에서 만나보세요
+						</span>
+					</div>
+				</div>
+				<div id="koroke-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>강남고로케</h1>
+							<p>
+								겉은 바삭, 속은 촉촉한<br>강남 맛집의 비법
+							</p>
+						</div>
+						<img src="img/peacock-koroke-image-1.jpg" alt="고로케">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							강남역 11번 출구에서 시작, 길게 늘어선<br>줄이 일상처럼 느껴지는 그 집
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-koroke-image-2.jpg" alt="강남고로케 매장전경">
+						<span>
+							고소한 냄새에<br>저절로 발길이 닿던 바삭하고 부드러운 맛집의 맛을<br>그대로 살리다
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-koroke-image-3.jpg" alt="강남고로케 모듬">
+						<span>
+							좋은 재료가 맛이 된다
+						</span>
+						<p>
+							싱싱한 계란과 버터를 듬뿍 사용해 맛있는 고로케 반죽을 완성했습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-right">
+							<img src="img/peacock-koroke-image-4.jpg" alt="강남고로케 팥">
+							<span>
+								남녀노소 누구에게나 최고의 간식
+							</span>
+							<p>
+								어른들은 물론 아이들까지 좋아하는 1등 간식<br>길게 늘어선 줄이 그 맛을 증명합니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							좋은 재료로 만들어 더 맛있는 강남고로케<br>이제 피코크에서 만나보세요
+						</span>
+					</div>
+				</div>
+				<div id="soonheene-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>순희네 빈대떡</h1>
+							<p>
+								바삭하고 고소하다가<br>이내 녹아드는 그 맛
+							</p>
+						</div>
+						<img src="img/peacock-soonheene-image-1.jpg" alt="순희네 빈대떡">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							북적거리는 광장시장 안, 그냥 지나치려 한 사람도<br>고소한 기름 냄새에 이끌려 멈추게 되는 곳
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-soonheene-image-2.jpg" alt="빈대떡이 올라간 철판">
+						<span>
+							타닥타닥<br>빈대떡 튀겨지는 소리에<br>안 먹고는 못 배기는 그곳의 맛<br>이제 피코크로 만나다
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-soonheene-image-3.jpg" alt="순희네 빈대떡 매장전경">
+						<span>
+							남녀노소 다 좋아하는 맛
+						</span>
+						<p>
+							아이부터 어른까지 남녀노소 다 좋아할 뿐 아니라<br>외국인 관광객도 줄 서서 먹는 순희네 빈대떡.<br>한국을 대표하는 맛집이 되었습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-right">
+							<img src="img/peacock-soonheene-image-4.jpg" alt="빈대떡 지지는 모습">
+							<span>
+								40년 전통, 광장시장의 명물이 되다
+							</span>
+							<p>
+								맛집이 많기로 유명한 광장시장 안에서도 사람이 많이 붐비는 순희네 빈대떡. 오랜 시간 사랑받아온 빈대떡의 참맛입니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							줄 서서라도 먹고 싶던 순희네 빈대떡<br>이제 피코크로 빠르게 즐기세요
+						</span>
+					</div>
+				</div>
+				<div id="kimyoojo-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>김유조 전통음료</h1>
+							<p>
+								달콤하게 그리고 든든하게 어머니가 만든 옛 맛
+							</p>
+						</div>
+						<img src="img/peacock-kimyoojo-image-1.jpg" alt="김유조 전통음료">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							긴 역사를 간직한 만큼 유서 깊은 식문화를<br>가진 안동. 그중 안동 고유의 전통 음료 문화를<br>그대로 담고 있는 식혜와 수정과
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-kimyoojo-image-2.jpg" alt="김유조 안동 찹쌀식혜">
+						<span>
+							30년 노하우를 바탕으로 담근<br>전통 음료 한 사발에서<br>어머니의 손 맛 그리고<br>역사를 느끼다
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-kimyoojo-image-3.jpg" alt="엿기름 짜는 모습">
+						<span>
+							안동의 전통방식 그대로
+						</span>
+						<p>
+							가마솥으로 직접 끓이는 등 전통방식 그대로 천천히 제대로 만들었기에<br>안동 전통 음료의 맛이 살아있습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-right">
+							<img src="img/peacock-kimyoojo-image-4.jpg" alt="김유조 안동 수정과">
+							<span>
+								종갓집 며느리의 30년 노하우
+							</span>
+							<p>
+								진천 송 씨 종가의 손맛을 물려받은 종갓집 며느리 김유조.<br>그 30년 노하우를 완벽하게 재현했습니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							안동의 전통과 맛을 그대로 담은<br>김유조 전통음료, 이제 피코크로 즐겨보세요
+						</span>
+					</div>
+				</div>
+				<div id="josunhotel-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>조선호텔 김치</h1>
+							<p>
+								100년 전통<br>특급 호텔의 맛
+							</p>
+						</div>
+						<img src="img/peacock-josunhotel-image-1.jpg" alt="조선호텔 김치">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							긴 전통만큼 최고의 한식 셰프들을<br>배출해 온 조선호텔
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-josunhotel-image-2.jpg" alt="조선호텔 외관">
+						<span>
+							조선호텔 셰프들의<br>비법 레시피를 그대로 적용한<br>특급 김치. 이제 그 맛을<br>우리집에서 즐긴다
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-josunhotel-image-3.jpg" alt="호텔 김치">
+						<span>
+							호텔 김치, 이제 누구나 즐긴다
+						</span>
+						<p>
+							조선호텔 손님들에게만 대접하던 조선호텔 김치.<br>그 맛 그대로를 즐기실 수 있습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-left">
+							<span>
+								진짜 한국의 맛<br>우리의 김치
+							</span>
+							<p>
+								무, 배추, 젓갈 심지어 물까지<br>한국의 식재료를 연구한 끝에<br>한국 김치만의 깊은 맛을 찾아냈습니다
+							</p>
+							<img src="img/peacock-josunhotel-image-4.jpg" alt="조선호텔 김치">
+						</div>
+						<div class="f-right">
+							<img src="img/peacock-josunhotel-image-5.jpg" alt="조선호텔 김치">
+							<span>
+								한식 전문 셰프의 레시피로
+							</span>
+							<p>
+								김치뿐만 아니라 한식 전반에<br>조예가 깊은 셰프가<br>최적의 김치 레시피를 찾아냈습니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							셰프가 만든 조선호텔 김치<br>이제 피코크에서 만나보세요
+						</span>
+					</div>
+				</div>
+				<div id="ch-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>피코크 피콕반점</h1>
+							<p>
+								여기 어디 24시간 문 여는 중국음식점 없나요?
+							</p>
+						</div>
+						<img src="img/peacock-chinese-image-1.jpg" alt="피콕반점 유산슬">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							신속배달 중국음식점도 문을 닫은 밤,<br>갑작스레 친구들이 들이닥쳤다면?
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-chinese-image-2.jpg" alt="피콕반점 짜장면">
+						<span>
+							걱정은 없다.<br>우리에겐 365일, 24시간<br>최고의 중국요리를 즐길 수 있는 피콕반점이 있으니까!
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-chinese-image-3.jpg" alt="피콕반점 백짬뽕">
+						<span>
+							믿고 먹을 수 있는 중화요리
+						</span>
+						<p>
+							HACCP 인증을 받은 위생적인 시설에서 만들어 믿고 먹을 수 있습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-left">
+							<span>
+								방금 만들어 바로 먹으니 더 맛있다
+							</span>
+							<p>
+								라면처럼 쟁여 놓았다가 먹기 직전<br>간단히 조리하면 완성되니까 면이 불지도, 튀김이 눅눅해지지도 않습니다
+							</p>
+							<img src="img/peacock-chinese-image-4.jpg" alt="피콕반점 짬뽕">
+						</div>
+						<div class="f-right">
+							<img src="img/peacock-chinese-image-5.jpg" alt="피콕반점 음식들">
+							<span>
+								짜장면부터 유산슬까지 없는 게 없다
+							</span>
+							<p>
+								깐풍기, 짬뽕, 백짬뽕, 짜장면,<br>유산슬, 해물누룽지탕<br>다양한 요리를 즐기실 수 있습니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							세상에서 가장 빠른 중화요리<br>피콕반점을 만나보세요
+						</span>
+					</div>
+				</div>
+				<div id="mandoo-info">
+					<div class="con1 cf">
+						<div class="desc">
+							<h1>피코크 만두연구소</h1>
+							<p>
+								만두, 얼마나 더<br>새로워질 수 있을까?
+							</p>
+						</div>
+						<img src="img/peacock-mandoo-image-1.jpg" alt="담백한 왕교자">
+					</div>
+					<div class="con2">
+						<div class="motto">
+							언어가 달라도 문화가 달라도<br>지역마다 발달한 각양각색의 만두
+						</div>
+					</div>
+					<div class="con3">
+						<img src="img/peacock-mandoo-image-2.jpg" alt="찜기">
+						<span>
+							지금까지 경험하지 못했던<br>다양한 만두를 소개하자!<br>더 나아가 세상에 없던<br>만두를 개발해 만두의<br>새 역사와 문화를 만들어가자!<br>그것이 만두연구소의<br>존재 이유이니까
+						</span>
+					</div>
+					<div class="con4">
+						<img src="img/peacock-mandoo-image-3.jpg" alt="만두모듬">
+						<span>
+							다양한 시도로 더 맛있게
+						</span>
+						<p>
+							만두의 맛을 극대화할 수 있도록<br>피에 찹쌀을 넣거나 소에 국내산 야채를 넣는 등<br>다양한 시도를 선보이고 있습니다
+						</p>
+					</div>
+					<div class="con5 cf">
+						<div class="f-left">
+							<span>
+								맛집 만두를<br>집에서 즐기도록
+							</span>
+							<p>
+								전국 각지의 만두 맛집을 돌며<br>고객의 취향을 파악하고<br>만두에 반영된 각 지역의<br>고유의 식문화를 접목시키고자 노력합니다
+							</p>
+							<img src="img/peacock-mandoo-image-4.jpg" alt="통통 새우왕교자">
+						</div>
+						<div class="f-right">
+							<img src="img/peacock-mandoo-image-5.jpg" alt="만두 속재료">
+							<span>
+								세상에 없던 새로운 만두를 창조하다
+							</span>
+							<p>
+								과자처럼 바삭한 식감을 가진<br>완전히 새로운 피,<br>한 번도 넣어본 적 없는<br>새로운 재료를 다져 넣은 소.<br>만두연구소는 끊임없는 연구를 통해<br>새로운 만두를 창조해 갈 것입니다
+							</p>
+						</div>
+					</div>
+					<div class="con6">
+						<span>
+							세상에서 가장 빠른 중화요리<br>피콕반점을 만나보세요
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="food-list">
+				<ul id="korean-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180308_0858008_002.png" alt="진한우보탕 팩">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">진한 우보탕</span>
+							<span class="time">5분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>132</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20190628_1922026_008.png" alt="진한얼큰육개장 팩">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">진한 얼큰 육개장</span>
+							<span class="time">5분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>153</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1716040_496.png" alt="전복반계탕 팩">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">전복반계탕</span>
+							<span class="time">5분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>101</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1653051_468.png" alt="녹두삼계탕 팩">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">녹두삼계탕</span>
+							<span class="time">5분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>86</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1609004_367.png" alt="진한추어탕 팩">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">진한 추어탕</span>
+							<span class="time">5분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>70</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1602048_346.png" alt="시골장터국 팩">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">시골 장터국</span>
+							<span class="time">5분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>69</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1417050_286.png" alt="들깨듬뿍 감자탕맛면">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">들깨듬뿍 감자탕맛면</span>
+							<span class="time">10분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>79</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180105_1024030_029.png" alt="제주 흑돈 양념 불고기">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">고기</span>
+							<span class="tit-name">제주 흑돈 양념 불고기</span>
+							<span class="amount">300g</span>
+							<button type="button"><span class="blind">좋아요</span>72</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1705024_384.png" alt="매운 불족발">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">고기</span>
+							<span class="tit-name">매운 불족발</span>
+							<span class="time">3분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>78</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1146010_035.png" alt="큰기와집 간장게장">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">반찬/피클</span>
+							<span class="tit-name">큰기와집 간장게장</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>59</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_21.png" alt="낙지볶음밥">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">낙지볶음밥</span>
+							<span class="time">3분</span>
+							<span class="amount">4인분</span>
+							<button type="button"><span class="blind">좋아요</span>80</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1353034_009.png" alt="순희네 빈대떡">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">튀김/전/호떡</span>
+							<span class="tit-name">순희네 빈대떡</span>
+							<span class="time">5분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>91</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="chinese-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1542058_306.png" alt="취영루 촉촉한 물만두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">취영루 촉촉한 물만두</span>
+							<span class="amount">700</span>
+							<button type="button"><span class="blind">좋아요</span>68</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1419012_552.png" alt="초마 탕수육">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">고기</span>
+							<span class="tit-name">초마 탕수육</span>
+							<span class="time">3분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>71</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_34.png" alt="초마 하얀짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">초마 하얀짬뽕</span>
+							<span class="time">8분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>68</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_32.png" alt="피콕반점 백짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">피콕반점 백짬뽕</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>51</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_37.png" alt="피콕반점 짜장면">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">피콕반점 짜장면</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>80</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_11.png" alt="피콕반점 해물누룽지탕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">피콕반점 해물누룽지탕</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_49.png" alt="피콕반점 유산슬">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">고기</span>
+							<span class="tit-name">피콕반점 유산슬</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>56</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_10.png" alt="피콕반점 짬뽕탕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">피콕반점 짬뽕탕</span>
+							<span class="time">5분</span>
+							<span class="amount">3인분</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_33.png" alt="초마 짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">초마 짬뽕</span>
+							<span class="time">8분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>171</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_38.png" alt="피콕반점 짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">피콕반점 짬뽕</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>87</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_50.png" alt="피콕반점 깐풍기">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">고기</span>
+							<span class="tit-name">피콕반점 깐풍기</span>
+							<span class="time">8분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>60</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_39.png" alt="초마 짜장">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">초마 짜장</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>62</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="japan-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1535043_762.png" alt="쉬림프도리아">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">쉬림프도리아</span>
+							<span class="time">5분</span>
+							<span class="amount">1인분</span>
+							<button type="button"><span class="blind">좋아요</span>62</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1531048_741.png" alt="차슈볶음밥">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">차슈볶음밥</span>
+							<span class="time">5분</span>
+							<span class="amount">4인분</span>
+							<button type="button"><span class="blind">좋아요</span>55</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180831_1638053_112.png" alt="돈코츠라멘">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">돈코츠라멘</span>
+							<span class="time">3분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>84</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180831_1636018_106.png" alt="메밀소바">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">메밀소바</span>
+							<span class="time">4분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>67</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180831_1634047_104.png" alt="사누끼 우동">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">사누끼 우동</span>
+							<span class="time">7분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>55</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180831_1637055_110.png" alt="탄탄멘">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">탄탄멘</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>75</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="italian-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1505049_033.png" alt="가지 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">가지 피자</span>
+							<span class="time">3분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>63</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1501032_030.png" alt="모짜렐라 살라미 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">모짜렐라 살라미 피자</span>
+							<span class="time">3분</span>
+							<span class="amount">1인분</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1458046_027.png" alt="버섯 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">버섯 피자</span>
+							<span class="time">3분</span>
+							<span class="amount">1인분</span>
+							<button type="button"><span class="blind">좋아요</span>56</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1725011_013.png" alt="시금치 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">시금치 피자</span>
+							<span class="time">3분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1404035_024.png" alt="크림치즈 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">크림치즈 피자</span>
+							<span class="time">3분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>53</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_45.png" alt="알리오올리오 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">알리오올리오 피자</span>
+							<span class="time">4분</span>
+							<span class="amount">1인분</span>
+							<button type="button"><span class="blind">좋아요</span>59</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1402014_018.png" alt="모짜렐라 바질피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">모짜렐라 바질피자</span>
+							<span class="time">3분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>71</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1403002_021.png" alt="치즈&양파 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">치즈&amp;양파 피자</span>
+							<span class="time">3분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>46</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1407039_035.png" alt="마르게리타 피자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">마르게리타 피자</span>
+							<span class="time">3분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>96</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_46.png" alt="미트소스 파스타">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">미트소스 파스타</span>
+							<span class="time">6분</span>
+							<span class="amount">1인분</span>
+							<button type="button"><span class="blind">좋아요</span>49</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="sweet-list" class="food-bg-dst">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1616009_099.png" alt="블루베리 마카롱">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">블루베리 마카롱</span>
+							<span class="amount">2개입</span>
+							<button type="button"><span class="blind">좋아요</span>50</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180308_0910002_008.png" alt="모싯잎 송편">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">모싯잎 송편</span>
+							<span class="amount">600g</span>
+							<button type="button"><span class="blind">좋아요</span>69</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1827057_554.png" alt="포도 젤리">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">포도 젤리</span>
+							<span class="amount">4인분</span>
+							<button type="button"><span class="blind">좋아요</span>53</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1109032_286.png" alt="벨지안 다크 초콜릿">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">초콜릿/캔디/껌</span>
+							<span class="tit-name">벨지안 다크 초콜릿</span>
+							<span class="amount">100g</span>
+							<button type="button"><span class="blind">좋아요</span>43</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1115040_318.png" alt="리얼 다크초콜릿 헤이즐넛">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">초콜릿/캔디/껌</span>
+							<span class="tit-name">리얼 다크초콜릿 헤이즐넛</span>
+							<span class="amount">140g</span>
+							<button type="button"><span class="blind">좋아요</span>73</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171222_0948032_021.png" alt="생초콜릿 녹차">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">초콜릿/캔디/껌</span>
+							<span class="tit-name">생초콜릿 녹차</span>
+							<span class="amount">37g</span>
+							<button type="button"><span class="blind">좋아요</span>52</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1306042_237.png" alt="밀크티 트러플">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">초콜릿/캔디/껌</span>
+							<span class="tit-name">밀크티 트러플</span>
+							<span class="amount">200g</span>
+							<button type="button"><span class="blind">좋아요</span>52</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1121059_345.png" alt="초코 참깨 스틱">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">초코 참깨 스틱</span>
+							<span class="amount">42g</span>
+							<button type="button"><span class="blind">좋아요</span>42</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20200226_1409018_123.png" alt="리얼 다크 초콜릿 아몬드 바">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">초콜릿/캔디/껌</span>
+							<span class="tit-name">리얼 다크 초콜릿 아몬드 바</span>
+							<span class="amount">260g</span>
+							<button type="button"><span class="blind">좋아요</span>44</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1016027_008.png" alt="미니 크림퍼프">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">미니 크림퍼프</span>
+							<span class="amount">4인분</span>
+							<button type="button"><span class="blind">좋아요</span>51</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1034051_045.png" alt="반건조 호박군고구마">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">반건조 호박군고구마</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>51</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171222_0944033_018.png" alt="대만 펑리수">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">대만 펑리수</span>
+							<span class="amount">270g(9개입)</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="bakery-list" class="food-bg-dst">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1557038_002.png" alt="녹차 롤케익">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">녹차 롤케익</span>
+							<span class="amount">70gx2입</span>
+							<button type="button"><span class="blind">좋아요</span>50</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170908_1727059_002.png" alt="티라미수 케익">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">티라미수 케익</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>207</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1556049_002.png" alt="멜팅치즈 샌드위치">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">베이커리/잼</span>
+							<span class="tit-name">멜팅치즈 샌드위치</span>
+							<span class="time">6분</span>
+							<span class="amount">1개입</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1554028_002.png" alt="오리지널 크로아상">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">베이커리/잼</span>
+							<span class="tit-name">오리지널 크로아상</span>
+							<span class="time">30초</span>
+							<span class="amount">3개입</span>
+							<button type="button"><span class="blind">좋아요</span>52</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1541001_002.png" alt="크로크무슈">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">베이커리/잼</span>
+							<span class="tit-name">크로크무슈</span>
+							<span class="time">2분</span>
+							<span class="amount">2개입</span>
+							<button type="button"><span class="blind">좋아요</span>50</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1528007_002.png" alt="갈릭미니롤">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">베이커리/잼</span>
+							<span class="tit-name">갈릭미니롤</span>
+							<span class="time">40초</span>
+							<span class="amount">9개입</span>
+							<button type="button"><span class="blind">좋아요</span>41</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1521008_002.png" alt="호떡">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">튀김/전/호떡</span>
+							<span class="tit-name">호떡</span>
+							<span class="time">5~8분</span>
+							<span class="amount">4개입</span>
+							<button type="button"><span class="blind">좋아요</span>75</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1456013_002.png" alt="아몬드 핫도그">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">핫도그/호빵</span>
+							<span class="tit-name">아몬드 핫도그</span>
+							<span class="time">2분</span>
+							<span class="amount">5개입</span>
+							<button type="button"><span class="blind">좋아요</span>46</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1032055_002.png" alt="당근케익">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">디저트</span>
+							<span class="tit-name">당근케익</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>95</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="beverage-list" class="food-bg-bvrg">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1018017_799.png" alt="아몬드 호두 율무차">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">아몬드 호두 율무차</span>
+							<span class="time">1분이내</span>
+							<span class="amount">200g</span>
+							<button type="button"><span class="blind">좋아요</span>43</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1006010_778.png" alt="대추차">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">대추차</span>
+							<span class="time">1분이내</span>
+							<span class="amount">100개입</span>
+							<button type="button"><span class="blind">좋아요</span>50</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1012007_792.png" alt="생강차">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">생강차</span>
+							<span class="time">1분이내</span>
+							<span class="amount">50개입</span>
+							<button type="button"><span class="blind">좋아요</span>52</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1607014_087.png" alt="에티오피아 원두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">에티오피아 원두</span>
+							<span class="amount">230g</span>
+							<button type="button"><span class="blind">좋아요</span>33</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1608044_111.png" alt="코스타리카 원두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">코스타리카 원두</span>
+							<span class="amount">230g</span>
+							<button type="button"><span class="blind">좋아요</span>33</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1605056_081.png" alt="인도 원두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">인도 원두</span>
+							<span class="amount">230g</span>
+							<button type="button"><span class="blind">좋아요</span>33</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170905_1006038_004.png" alt="김유조 안동 찹쌀식혜">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">김유조 안동 찹쌀식혜</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>59</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180105_1030008_031.png" alt="한라봉 오미자 블렌딩 티">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">한라봉 오미자 블렌딩 티</span>
+							<span class="amount">245ml</span>
+							<button type="button"><span class="blind">좋아요</span>39</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1101030_238.png" alt="클럽소다">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">클럽소다</span>
+							<span class="amount">250ml*6</span>
+							<button type="button"><span class="blind">좋아요</span>36</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="cereal-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1303048_230.png" alt="시리얼바 라이트">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">시리얼바 라이트</span>
+							<span class="amount">26gx8개입</span>
+							<button type="button"><span class="blind">좋아요</span>56</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1255029_223.png" alt="시리얼바">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">시리얼바</span>
+							<span class="amount">35gx8개입</span>
+							<button type="button"><span class="blind">좋아요</span>42</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1507027_679.png" alt="우리쌀 프레이크">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">우리쌀 프레이크</span>
+							<span class="amount">490g</span>
+							<button type="button"><span class="blind">좋아요</span>46</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1506001_665.png" alt="오곡초코볼">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">오곡초코볼</span>
+							<span class="amount">510g</span>
+							<button type="button"><span class="blind">좋아요</span>47</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1504036_654.png" alt="아몬드 콘프레이크">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">아몬드 콘프레이크</span>
+							<span class="amount">630g</span>
+							<button type="button"><span class="blind">좋아요</span>48</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1119040_338.png" alt="콘프레이크">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">콘프레이크</span>
+							<span class="amount">500g</span>
+							<button type="button"><span class="blind">좋아요</span>45</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1118015_331.png" alt="슬림플러스">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">슬림플러스</span>
+							<span class="amount">40g * 10봉</span>
+							<button type="button"><span class="blind">좋아요</span>41</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1115054_324.png" alt="통곡물 뮤즐리">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">통곡물 뮤즐리</span>
+							<span class="amount">380g</span>
+							<button type="button"><span class="blind">좋아요</span>47</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1113050_311.png" alt="렌틸&퀴노아 뮤즐리">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">렌틸&amp;퀴노아 뮤즐리</span>
+							<span class="amount">400g</span>
+							<button type="button"><span class="blind">좋아요</span>41</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1106032_273.png" alt="인절미 그래놀라">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">인절미 그래놀라</span>
+							<span class="amount">380g</span>
+							<button type="button"><span class="blind">좋아요</span>47</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1105004_266.png" alt="과일 그래놀라">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">밥/죽/시리얼</span>
+							<span class="tit-name">과일 그래놀라</span>
+							<span class="amount">380g</span>
+							<button type="button"><span class="blind">좋아요</span>40</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="spice-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180308_0917004_014.png" alt="국산 참기름">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">오일/향신료</span>
+							<span class="tit-name">국산 참기름</span>
+							<span class="amount">250ml</span>
+							<button type="button"><span class="blind">좋아요</span>48</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1510054_375.png" alt="마늘겨자 초장 소스">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">소스/양념</span>
+							<span class="tit-name">마늘겨자 초장 소스</span>
+							<span class="amount">150ml</span>
+							<button type="button"><span class="blind">좋아요</span>40</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1457026_340.png" alt="나물무침 간장 소스">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">소스/양념</span>
+							<span class="tit-name">나물무침 간장 소스</span>
+							<span class="amount">150ml</span>
+							<button type="button"><span class="blind">좋아요</span>44</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1317022_029.png" alt="국산 들기름">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">오일/향신료</span>
+							<span class="tit-name">국산 들기름</span>
+							<span class="amount">250ml</span>
+							<button type="button"><span class="blind">좋아요</span>38</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1313057_022.png" alt="씻어나온 국산 고춧가루">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">오일/향신료</span>
+							<span class="tit-name">씻어나온 국산 고춧가루</span>
+							<span class="amount">200g</span>
+							<button type="button"><span class="blind">좋아요</span>41</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1303008_002.png" alt="묵은 명품 천일염">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">오일/향신료</span>
+							<span class="tit-name">묵은 명품 천일염</span>
+							<span class="amount">500g</span>
+							<button type="button"><span class="blind">좋아요</span>35</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_1052002_860.png" alt="국산 고추장">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">소스/양념</span>
+							<span class="tit-name">국산 고추장</span>
+							<span class="amount">1kg</span>
+							<button type="button"><span class="blind">좋아요</span>35</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180214_0947045_740.png" alt="소불고기 양념">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">소스/양념</span>
+							<span class="tit-name">소불고기 양념</span>
+							<span class="amount">4인분</span>
+							<button type="button"><span class="blind">좋아요</span>37</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="snack-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1116019_194.png" alt="참깨와플">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">참깨와플</span>
+							<span class="amount">180g</span>
+							<button type="button"><span class="blind">좋아요</span>48</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1100013_180.png" alt="딸기&요구르트 팝콘">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">딸기&amp;요구르트 팝콘</span>
+							<span class="amount">45g</span>
+							<button type="button"><span class="blind">좋아요</span>44</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1036058_138.png" alt="초코프레첼">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">초코프레첼</span>
+							<span class="amount">65g</span>
+							<button type="button"><span class="blind">좋아요</span>50</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180213_1015059_089.png" alt="초코썸">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">초코썸</span>
+							<span class="amount">76g</span>
+							<button type="button"><span class="blind">좋아요</span>38</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20180212_1837022_068.png" alt="수 고구마 스틱">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">수 고구마 스틱</span>
+							<span class="amount">50g</span>
+							<button type="button"><span class="blind">좋아요</span>48</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1552033_075.png" alt="카사바칩 칠리페퍼맛">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">카사바칩 칠리페퍼맛</span>
+							<span class="amount">100g</span>
+							<button type="button"><span class="blind">좋아요</span>39</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1035051_097.png" alt="7그레인 크림케이크">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">7그레인 크림케이크</span>
+							<span class="amount">12봉입</span>
+							<button type="button"><span class="blind">좋아요</span>37</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171208_1542009_063.png" alt="콘볼 콘포타쥬맛">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">스낵</span>
+							<span class="tit-name">콘볼 콘포타쥬맛</span>
+							<span class="amount">80g</span>
+							<button type="button"><span class="blind">좋아요</span>38</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="choma-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_34.png" alt="초마 하얀짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">초마 하얀짬뽕</span>
+							<span class="time">8분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>68</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_33.png" alt="초마 짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">초마 짬뽕</span>
+							<span class="time">8분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>171</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_39.png" alt="초마 짜장">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">초마 짜장</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>62</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="giwa-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1146010_035.png" alt="큰기와집 간장게장">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">반찬/피클</span>
+							<span class="tit-name">큰기와집 간장게장</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>59</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1150011_051.png" alt="큰기와집 양념게장">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">반찬/피클</span>
+							<span class="tit-name">큰기와집 양념게장</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>55</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="samwon-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_8.png" alt="삼원가든 백탕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">삼원가든 백탕</span>
+							<span class="time">4분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>65</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_9.png" alt="삼원가든 홍탕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">삼원가든 홍탕</span>
+							<span class="time">4분</span>
+							<span class="amount">1~2인분</span>
+							<button type="button"><span class="blind">좋아요</span>55</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="koroke-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1359048_012.png" alt="강남고로케 팥">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">튀김/전/호떡</span>
+							<span class="tit-name">강남고로케 팥</span>
+							<span class="time">2분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>37</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="soonheene-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1353034_009.png" alt="순희네 빈대떡">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">튀김/전/호떡</span>
+							<span class="tit-name">순희네 빈대떡</span>
+							<span class="time">5분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>91</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="kimyoojo-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170905_1006038_004.png" alt="김유조 안동 찹쌀식혜">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">김유조 안동 찹쌀식혜</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>59</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170905_1434037_034.png" alt="김유조 안동 수정과">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">커피/티/음료</span>
+							<span class="tit-name">김유조 안동 수정과</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>44</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="josunhotel-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1420027_042.png" alt="조선호텔 썰은 포기김치">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">김치/두부</span>
+							<span class="tit-name">조선호텔<br>썰은 포기김치</span>
+							<button type="button"><span class="blind">좋아요</span>85</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_2122015_013.png" alt="조선호텔 볶음김치">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">김치/두부</span>
+							<span class="tit-name">조선호텔 볶음김치</span>
+							<button type="button"><span class="blind">좋아요</span>32</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_2119038_006.png" alt="조선호텔 맛김치">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">김치/두부</span>
+							<span class="tit-name">조선호텔 맛김치</span>
+							<button type="button"><span class="blind">좋아요</span>32</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="ch-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_10.png" alt="피콕반점 짬뽕탕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">피콕반점 짬뽕탕</span>
+							<span class="time">5분</span>
+							<span class="amount">3인분</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_11.png" alt="피콕반점 해물누룽지탕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">국/찌개/육수</span>
+							<span class="tit-name">피콕반점 해물누룽지탕</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>54</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_32.png" alt="피콕반점 백짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">피콕반점 백짬뽕</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>51</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_37.png" alt="피콕반점 짜장면">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">피콕반점 짜장면</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>80</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_38.png" alt="피콕반점 짬뽕">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">면/파스타/피자</span>
+							<span class="tit-name">피콕반점 짬뽕</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>87</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_49.png" alt="피콕반점 유산슬">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">고기</span>
+							<span class="tit-name">피콕반점 유산슬</span>
+							<span class="time">6분</span>
+							<span class="amount">2인분</span>
+							<button type="button"><span class="blind">좋아요</span>56</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/A_20170828_50.png" alt="피콕반점 깐풍기">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">고기</span>
+							<span class="tit-name">피콕반점 깐풍기</span>
+							<span class="time">8분</span>
+							<span class="amount">2~3인분</span>
+							<button type="button"><span class="blind">좋아요</span>60</button>
+						</div>
+					</li>
+				</ul>
+				<ul id="mandoo-list" class="food-bg-common">
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1155047_071.png" alt="명품물만두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">명품물만두</span>
+							<span class="time">3분</span>
+							<span class="amount">7인분</span>
+							<button type="button"><span class="blind">좋아요</span>78</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_2048012_003.png" alt="담백한 왕교자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">담백한 왕교자</span>
+							<span class="time">7분</span>
+							<span class="amount">10인분</span>
+							<button type="button"><span class="blind">좋아요</span>31</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1157052_083.png" alt="통통 새우왕교자">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">통통 새우왕교자</span>
+							<span class="time">7분</span>
+							<span class="amount">6인분</span>
+							<button type="button"><span class="blind">좋아요</span>43</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20170830_1203009_090.png" alt="바삭촉촉 군만두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">바삭촉촉 군만두</span>
+							<span class="time">6분</span>
+							<span class="amount">8인분</span>
+							<button type="button"><span class="blind">좋아요</span>50</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1258057_510.png" alt="평양 왕만두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">평양 왕만두</span>
+							<span class="time">7분</span>
+							<span class="amount">700g</span>
+							<button type="button"><span class="blind">좋아요</span>35</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1617035_198.png" alt="도토리전병">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">도토리전병</span>
+							<span class="time">8분</span>
+							<span class="amount">600g</span>
+							<button type="button"><span class="blind">좋아요</span>43</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span>
+								<img src="img/list/20171215_1619025_204.png" alt="생돈육 왕만두">
+							</span>
+						</a>
+						<div class="text-group">
+							<span class="category">떡볶이/순대/만두</span>
+							<span class="tit-name">생돈육 왕만두</span>
+							<span class="time">7분</span>
+							<span class="amount">350g x 2개입</span>
+							<button type="button"><span class="blind">좋아요</span>33</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-area">
+				<a href="javascript:;" class="btn-back"><span class="arrow-back"></span>BACK</a>
+				<a href="javascript:;" class="btn-close"><span class="blind">닫기</span></a>
+			</div>
+		</div>
+	</div>
+<!-- //pc gnb-layer	-->
+	<section id="market">
+		<div class="market-dimmed">
+		</div>
+		<div id="main-market">
+			<button><span class="blind">market</span></button>
+			<div class="market-area">
+			  <a href="javascript:;" class="btn-back"><span class="arrow-back"></span>BACK</a>
+				<a href="javascript:;" class="btn-close"><span class="blind">닫기</span></a>
+				<div class="market-menu cf">
+					<h2>market</h2>
+					<ul class="market-gnb cf">
+						<li>
+							<h3><a href="javascript:;">REAL MEAL</a></h3>
+							<ul class="market-sub">
+								<li><a href="javascript:;">국/찌개/육수</a></li>
+								<li><a href="javascript:;">면/파스타/피자</a></li>
+								<li><a href="javascript:;">밥/죽/시리얼</a></li>
+								<li><a href="javascript:;">고기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="javascript:;">STREET FOOD</a></h3>
+							<ul class="market-sub">
+								<li><a href="javascript:;">떡볶이/순대/만두</a></li>
+								<li><a href="javascript:;">튀김/전/호떡</a></li>
+								<li><a href="javascript:;">핫도그/호빵</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="javascript:;">SALAD &amp; SIDE-DISH</a></h3>
+							<ul class="market-sub">
+								<li><a href="javascript:;">샐러드/드레싱</a></li>
+								<li><a href="javascript:;">김치/두부</a></li>
+								<li><a href="javascript:;">반찬/피클</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="javascript:;">DESSERT &amp; BEVERAGE</a></h3>
+							<ul class="market-sub">
+								<li><a href="javascript:;">디저트</a></li>
+								<li><a href="javascript:;">베이커리/잼</a></li>
+								<li><a href="javascript:;">커피/티/음료</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="javascript:;">CONDIMENTE</a></h3>
+							<ul class="market-sub">
+								<li><a href="javascript:;">소스/양념</a></li>
+								<li><a href="javascript:;">오일/향신료</a></li>
+								<li><a href="javascript:;">밀가루/믹스/떡</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="javascript:;">SNACK</a></h3>
+							<ul class="market-sub">
+								<li><a href="javascript:;">스낵</a></li>
+								<li><a href="javascript:;">초콜릿/캔디/껌</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="javascript:;">DAIRY</a></h3>
+							<ul class="market-sub">
+								<li><a href="javascript:;">치즈</a></li>
+								<li><a href="javascript:;">요거트/우유</a></li>
+							</ul>
+						</li>
+					</ul>
+					<aside>
+						<div class="banner-best">
+							<h3 class="mo-blind">BEST</h3>
+							<a href="javascript:;">
+								<h4>PEACOCK<span class="mo-inline">BEST</span></h4>
+								<span class="mo-blind">피코크에서 잘 나가는<br>베스트 제품</span>
+							</a>
+						</div>
+						<div class="banner-pk">
+							<h3>PK PEACOCK</h3>
+							<a href="javascript:;">
+								<span class="mo-blind">피코크가 제안하는<br>가정식 전문점</span>
+							</a>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- //web market	-->
+	<div id="container">
+	  <div class="inner">
+			<section id="archive">
+			  <div class="title cf">
+          <h2>archive</h2>
+          <p>피코크에 대한 각종 소식과 이벤트를<br>확인해보세요.</p>
+          <div class="input-box">
+            <input type="search" name="insta_search" id="srch" placeholder="SEARCH..."><label for="srch" class="blind">검색</label>
+            <button type="button"></button>
+          </div>
+			  </div>
+				<div class="list">
+				  <ul class="cf">
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_001.jpg" alt="조선호텔김치">
+				        </figure>
+				        <p class="list-desc">
+				          <span>[피콕일기 조선호텔김치편 #EVENT]</span>
+				          <time datetime="2019-04-11">2019-04-11</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_002.jpg" alt="아몬드 호두 율무차">
+				        </figure>
+				        <p class="list-desc">
+				          <span>아몬드 호두 율무차</span>
+				          <time datetime="2018-11-16">2018-11-16</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_003.jpg" alt="인터뷰">
+				        </figure>
+				        <p class="list-desc">
+				          <span>이마트 창사 25주년 축하 인터뷰</span>
+				          <time datetime="2018-11-16">2018-11-16</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_004.jpg" alt="과자집">
+				        </figure>
+				        <p class="list-desc">
+				          <span>과자의 꿈</span>
+				          <time datetime="2018-11-16">2018-11-16</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_005.jpg" alt="부산포 어묵탕">
+				        </figure>
+				        <p class="list-desc">
+				          <span>부산포 어묵탕</span>
+				          <time datetime="2018-11-16">2018-11-16</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_006.jpg" alt="초마짬뽕 이벤트">
+				        </figure>
+				        <p class="list-desc">
+				          <span>(종료) 피코크가 쏜다! 초마짬뽕 이벤트</span>
+				          <time datetime="2018-11-16">2018-11-16</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_007.jpg" alt="레드애플 캐모마일">
+				        </figure>
+				        <p class="list-desc">
+				          <span>레드애플 캐모마일</span>
+				          <time datetime="2018-11-15">2018-11-15</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_008.jpg" alt="유기농 과자">
+				        </figure>
+				        <p class="list-desc">
+				          <span>유기농 과자</span>
+				          <time datetime="2018-11-15">2018-11-15</time>
+				        </p>
+				      </a>
+				    </li>
+				    <li>
+				      <a href="javascript:;">
+				        <figure>
+				          <img src="img/archive_board_009.jpg" alt="루이보스 오렌지">
+				        </figure>
+				        <p class="list-desc">
+				          <span>루이보스 오렌지</span>
+				          <time datetime="2018-11-15">2018-11-15</time>
+				        </p>
+				      </a>
+				    </li>
+				  </ul>
+          <div class="more-area">
+            <a href="javascript:;"><span class="btn-more">view more</span></a>
+            <p class="count-area">
+              <span class="current">6</span>
+              <span class="all"></span>
+            </p>
+          </div>
+				</div>
+		  </section>
+		</div>
+<!--	//brand	-->
+	</div>
+<!-- //container	-->	
+	<footer class="cf">
+		<div class="inner">
+			<div class="f-logo"><a href="index.html"><span class="blind">피코크 로고</span></a></div>
+			<div class="f-desc">
+				<div class="fnb">
+					<a href="javascript:;">피코크소개</a>
+					<a href="javascript:;" class="txt-green">이용약관</a>
+					<a href="javascript:;" class="txt-green">개인정보처리방침</a>
+				</div>
+				<div class="sns">
+					<a href="javascript:;" class="sns-facebook"><span class="blind">페이스북</span></a>
+					<a href="javascript:;" class="sns-instagram"><span class="blind">인스타그램</span></a>
+				</div>
+				<p class="f-info">
+					<span>(주)이마트</span>
+					<span>대표자: 강희석</span>
+					<span>서울특별시 성동구 뚝섬로 377(성수동2가)</span>
+					<span>사업자등록번호 : 206-86-50913</span><br class="pc-blank">
+					<span>통신판매업 신고번호 : 제2011-서울성동-0345호</span>
+					<span>이마트대표전화 : <a href="tel:02-380-5678">02-380-5678</a></span><br class="pc-blank">
+					<span>(주)에스에스지닷컴 : <a href="tel:1577-3419">1577-3419</a></span>
+					<span>신세계백화점 : <a href="tel:1588-1234">1588-1234</a></span><br class="pc-blank">
+					<span>신세계포인트 : <a href="tel:1899-4349">1899-4349</a></span>
+				</p>
+				<p class="copyright">
+					&copy; PEACOCK. All Rights Reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<!-- //#wrap -->
+
+<!-- popup - login -->
+<div id="login-area" class="pop-base">
+	<div class="pop-content pop-bg">
+		<p class="cf">
+			<a href="#" onclick="$(this).parent().parent().parent().fadeOut();" class="btn-close"><span class="blind">닫기</span></a>
+		</p>
+		<div class="login-desc">
+			<h2>login</h2>
+			<span>PEACOCK는 <em class="txt-beige">신세계포인트 계정</em>으로 로그인이 가능합니다.</span>
+			<form name="login">
+				<fieldset>
+					<legend class="blind">로그인정보 입력</legend>
+					<input type="text" name="id" id="login_id" placeholder="아이디"><label for="login_id" class="blind"></label>
+					<input type="password" name="pwd" id="login_pwd" placeholder="비밀번호"><label for="login_pwd" class="blind"></label>
+					<div class="btn-find">
+						<a href="javascript:;">아이디 찾기</a>
+						<span> / </span>
+						<a href="javascript:;">비밀번호 찾기</a>
+					</div>
+					<input type="checkbox" name="idFix" id="save_id"><label for="save_id">아이디 저장</label>
+					<button type="submit">LOGIN</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="login-footer">
+			<p>
+				<b>아직 신세계포인트 회원이 아니신가요?</b>
+				<span>이마트 이용약관에 동의하시면 다양한 혜택을 받으실 수 있습니다.</span>
+				<a href="javascript:;">이용약관 보러가기</a>
+			</p>
+			<button type="button" class="txt-beige">SIGN IN</button>
+		</div>
+	</div>
+</div>
+<!-- popup - search -->
+<div id="search-area" class="pop-base">
+	<div class="pop-content">
+		<p class="cf">
+			<a href="#" onclick="$(this).parent().parent().parent().fadeOut();" class="btn-close"><span class="blind">닫기</span></a>
+		</p>
+		<div class="search-desc">
+			<div class="input-box">
+				<input type="search" name="total_search" id="srch" placeholder="SEARCH..."><label for="srch" class="blind">검색</label>
+				<button type="button"></button>
+			</div>
+			<p>당신의 맛있는 하루를 위한</p>
+			<ul>
+				<li><a href="javascript:;" class="txt-green"># 샐러드</a></li>
+				<li><a href="javascript:;" class="txt-green"># 만두연구소</a></li>
+				<li><a href="javascript:;" class="txt-green"># 집밥</a></li>
+				<li><a href="javascript:;" class="txt-green"># 맛집</a></li>
+				<li><a href="javascript:;" class="txt-green"># 간식</a></li>
+				<li><a href="javascript:;" class="txt-green"># 보양식</a></li>
+				<li><a href="javascript:;" class="txt-green"># 홈파티</a></li>
+				<li><a href="javascript:;" class="txt-green"># 곤드레</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- popup - login -->
+<div id="my-area" class="pop-base">
+	<div class="pop-content pop-bg">
+		<p class="cf">
+			<a href="#" onclick="$(this).parent().parent().parent().fadeOut();" class="btn-close"><span class="blind">닫기</span></a>
+		</p>
+		<div class="my-desc">
+			<h2>my menu</h2>
+		</div>
+		<div class="my-list">
+			<span>다양한 <em class="txt-green">피코크 상품</em>을 만나보세요.</span>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

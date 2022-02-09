@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.gnb {width: 610px; margin-left: 20px;}
+.gnb > ul > li {margin: 0 10px;}
+
+#main-best .title-area {margin-left: 8%;}
+#main-best .best-list {width: calc(100% - 13% - 290px);}

@@ -1145,6 +1145,7 @@ footer {padding-bottom: 5em;}
 }
 .btn-close {	
 	width: 26px; height: 26px;
+	margin: 30px;
 	background-image: url(../img/button-popup-close.jpg);
 }
 /* popup - #login-area */

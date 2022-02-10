@@ -236,9 +236,6 @@ header.scroll .gnb > ul > li > a:hover:after {background: #1f695b;}
 	font: 600 2rem 'Barlow Condensed', sans-serif;
 	letter-spacing: 5px;
 }
-.menu-area .btn-area a.btn-close {
-	margin: 30px;
-}
 .menu-area .btn-close-w {
 	position: relative;
 	float: right;
@@ -365,6 +362,9 @@ header.scroll .gnb > ul > li > a:hover:after {background: #1f695b;}
 .menu-list .btn-area .btn-back {
 	display: inline-block;
 	margin: 30px 20px;
+}
+.menu-area .btn-area .btn-close {
+	margin: 30px;
 }
 /* gourmet-info */
 .menu-list .gourmet-info {

@@ -236,6 +236,9 @@ header.scroll .gnb > ul > li > a:hover:after {background: #1f695b;}
 	font: 600 2rem 'Barlow Condensed', sans-serif;
 	letter-spacing: 5px;
 }
+.menu-area .btn-area a.btn-close {
+	margin: 30px;
+}
 .menu-area .btn-close-w {
 	position: relative;
 	float: right;

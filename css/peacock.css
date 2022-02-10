@@ -363,7 +363,7 @@ header.scroll .gnb > ul > li > a:hover:after {background: #1f695b;}
 	display: inline-block;
 	margin: 30px 20px;
 }
-.menu-area .btn-area .btn-close {
+.menu-list .btn-area .btn-close {
 	margin: 30px;
 }
 /* gourmet-info */
